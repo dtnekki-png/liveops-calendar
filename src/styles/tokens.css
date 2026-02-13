@@ -1,0 +1,93 @@
+/* ═══════════════════════════════════════════════════════
+   LiveOps Calendar — Design Tokens
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Background layers ── */
+  --bg-app:        #0B0E14;
+  --bg-surface:    #111620;
+  --bg-card:       #171D2A;
+  --bg-card-hover: #1E2538;
+  --bg-overlay:    rgba(0, 0, 0, 0.65);
+  --bg-input:      #1A2030;
+
+  /* ── Accent palette ── */
+  --accent:        #6C5CE7;
+  --accent-hover:  #7C6FF0;
+  --accent-dim:    rgba(108, 92, 231, 0.15);
+  --accent-text:   #A89AFA;
+
+  --success:       #00D68F;
+  --success-dim:   rgba(0, 214, 143, 0.12);
+  --warning:       #FFB547;
+  --warning-dim:   rgba(255, 181, 71, 0.12);
+  --danger:        #FF6B6B;
+  --danger-dim:    rgba(255, 107, 107, 0.12);
+  --info:          #4ECDC4;
+  --info-dim:      rgba(78, 205, 196, 0.12);
+
+  /* ── Entity type colors ── */
+  --entity-grid:    #FF6B6B;
+  --entity-3dset:   #6C5CE7;
+  --entity-set:     #00D68F;
+  --entity-gacha2:  #FFB547;
+  --entity-gacha3:  #4ECDC4;
+
+  /* ── Price category colors ── */
+  --price-expensive: #FF6B6B;
+  --price-standard:  #4ECDC4;
+
+  /* ── Text colors ── */
+  --text-primary:    #E8ECF4;
+  --text-secondary:  #8892A8;
+  --text-muted:      #5A6478;
+  --text-inverse:    #0B0E14;
+
+  /* ── Border ── */
+  --border:          #1E2538;
+  --border-hover:    #2A3350;
+  --border-accent:   rgba(108, 92, 231, 0.3);
+
+  /* ── Typography ── */
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:  0.6875rem;   /* 11px */
+  --text-sm:  0.75rem;     /* 12px */
+  --text-md:  0.8125rem;   /* 13px */
+  --text-base: 0.875rem;   /* 14px */
+  --text-lg:  1rem;        /* 16px */
+  --text-xl:  1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+
+  /* ── Spacing ── */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 20px rgba(108, 92, 231, 0.2);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 200ms;
+
+  /* ── Calendar ── */
+  --col-width: 90px;
+  --row-height: 56px;
+  --header-height: 52px;
+  --sidebar-width: 180px;
+}
