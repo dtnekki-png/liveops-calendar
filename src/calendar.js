@@ -4,25 +4,26 @@
 
 import { daysInMonth } from './data.js';
 import { renderEventBlock, renderStaticBlock, renderStaticDynamicBlock, renderEntityChip } from './blocks.js';
+import { getHolidaysForMonth } from './holidays.js';
 
 const WEEKDAY_NAMES = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 const MONTH_NAMES = [
-    'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+  'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+  'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
 ];
 
 /**
  * Get current column width from CSS variable
  */
 export function getColWidth() {
-    return parseInt(getComputedStyle(document.documentElement).getPropertyValue('--col-width'));
+  return parseInt(getComputedStyle(document.documentElement).getPropertyValue('--col-width'));
 }
 
 /**
  * Render the month navigation in the top bar
  */
 export function renderMonthNav(year, month) {
-    return `
+  return `
     <div class="month-nav">
       <button class="month-nav__btn" id="prev-month">◀</button>
       <span class="month-nav__label" id="month-label">${MONTH_NAMES[month]} ${year}</span>
@@ -36,31 +37,43 @@ export function renderMonthNav(year, month) {
  * Render the timeline header with real calendar dates
  */
 export function renderTimelineHeader(year, month) {
-    const numDays = daysInMonth(year, month);
-    const today = new Date();
-    const isCurrentMonth = today.getFullYear() === year && today.getMonth() === month;
-    const todayDate = today.getDate();
+  const numDays = daysInMonth(year, month);
+  const today = new Date();
+  const isCurrentMonth = today.getFullYear() === year && today.getMonth() === month;
+  const todayDate = today.getDate();
+  const holidays = getHolidaysForMonth(year, month);
 
-    let daysHtml = '';
-    for (let d = 1; d <= numDays; d++) {
-        const date = new Date(year, month, d);
-        const weekday = date.getDay(); // 0=Sun
-        const isToday = isCurrentMonth && d === todayDate;
-        const isWeekend = weekday === 0 || weekday === 6;
+  let daysHtml = '';
+  for (let d = 1; d <= numDays; d++) {
+    const date = new Date(year, month, d);
+    const weekday = date.getDay(); // 0=Sun
+    const isToday = isCurrentMonth && d === todayDate;
+    const isWeekend = weekday === 0 || weekday === 6;
+    const dayHolidays = holidays.get(d);
 
-        let classes = 'timeline-day';
-        if (isToday) classes += ' timeline-day--today';
-        if (isWeekend) classes += ' timeline-day--weekend';
+    let classes = 'timeline-day';
+    if (isToday) classes += ' timeline-day--today';
+    if (isWeekend) classes += ' timeline-day--weekend';
+    if (dayHolidays) classes += ' timeline-day--holiday';
 
-        daysHtml += `
+    // Holiday indicator HTML
+    let holidayHtml = '';
+    if (dayHolidays) {
+      const icons = dayHolidays.map(h => h.icon).join('');
+      const tooltipLines = dayHolidays.map(h => `${h.icon} ${h.name}`).join('\n');
+      holidayHtml = `<div class="timeline-day__holiday" title="${tooltipLines}">${icons}</div>`;
+    }
+
+    daysHtml += `
       <div class="${classes}" data-day="${d}">
+        ${holidayHtml}
         <div class="timeline-day__weekday">${WEEKDAY_NAMES[weekday]}</div>
         <div class="timeline-day__number">${String(d).padStart(2, '0')}</div>
       </div>
     `;
-    }
+  }
 
-    return `
+  return `
     <div class="timeline-header">
       <div class="timeline-header__sidebar">Блоки / Дни</div>
       <div class="timeline-header__days">
@@ -74,15 +87,15 @@ export function renderTimelineHeader(year, month) {
  * Render a section with rows
  */
 export function renderSection(title, type, blocks, entityRows) {
-    const blockCount = blocks ? blocks.length : (entityRows ? entityRows.flat().length : 0);
-    const colWidth = getColWidth();
+  const blockCount = blocks ? blocks.length : (entityRows ? entityRows.flat().length : 0);
+  const colWidth = getColWidth();
 
-    let contentHtml = '';
+  let contentHtml = '';
 
-    if (type === 'entities' && entityRows) {
-        // Dynamic entities: multiple rows
-        entityRows.forEach((rowEntities, ri) => {
-            contentHtml += `
+  if (type === 'entities' && entityRows) {
+    // Dynamic entities: multiple rows
+    entityRows.forEach((rowEntities, ri) => {
+      contentHtml += `
         <div class="calendar-row entity-row">
           <div class="calendar-row__sidebar">
             <span class="calendar-row__sidebar-name">Ряд ${ri + 1}</span>
@@ -92,15 +105,15 @@ export function renderSection(title, type, blocks, entityRows) {
           </div>
         </div>
       `;
-        });
-    } else if (blocks) {
-        // Group blocks by name or render individually
-        blocks.forEach(block => {
-            const renderer = type === 'event' ? renderEventBlock :
-                type === 'static' ? renderStaticBlock :
-                    renderStaticDynamicBlock;
+    });
+  } else if (blocks) {
+    // Group blocks by name or render individually
+    blocks.forEach(block => {
+      const renderer = type === 'event' ? renderEventBlock :
+        type === 'static' ? renderStaticBlock :
+          renderStaticDynamicBlock;
 
-            contentHtml += `
+      contentHtml += `
         <div class="calendar-row">
           <div class="calendar-row__sidebar">
             <span class="calendar-row__sidebar-name">${block.name}</span>
@@ -110,10 +123,10 @@ export function renderSection(title, type, blocks, entityRows) {
           </div>
         </div>
       `;
-        });
-    }
+    });
+  }
 
-    return `
+  return `
     <div class="row-section" data-section-type="${type}">
       <div class="row-section__header">
         <span class="row-section__chevron">▼</span>
@@ -132,7 +145,7 @@ export function renderSection(title, type, blocks, entityRows) {
  * Render the analytics bar (hidden by default, shown on block selection)
  */
 export function renderAnalyticsBar() {
-    return `
+  return `
     <div class="analytics-bar" id="analytics-bar">
       <div class="analytics-bar__item">
         <span class="analytics-bar__label">Rev</span>

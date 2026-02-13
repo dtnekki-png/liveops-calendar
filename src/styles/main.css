@@ -304,6 +304,53 @@ body {
     color: var(--accent);
 }
 
+/* ── Holiday indicators ── */
+.timeline-day--holiday {
+    background: rgba(255, 181, 71, 0.06);
+}
+
+.timeline-day__holiday {
+    font-size: 12px;
+    line-height: 1;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+    position: relative;
+}
+
+/* Custom tooltip for holidays */
+.timeline-day--holiday {
+    position: relative;
+}
+
+.timeline-day__holiday::after {
+    content: attr(title);
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-md);
+    padding: 6px 10px;
+    font-size: 11px;
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    white-space: pre;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 150ms var(--ease-out);
+    box-shadow: var(--shadow-md);
+    min-width: max-content;
+}
+
+.timeline-day__holiday:hover::after {
+    opacity: 1;
+}
+
 /* ═══════════════════════════════════════
    ROW SECTIONS
    ═══════════════════════════════════════ */
