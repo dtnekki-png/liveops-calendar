@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import fs from 'fs';
 import path from 'path';
+import yaml from '@modyfi/vite-plugin-yaml';
 
 export default defineConfig({
   server: {
@@ -8,6 +9,7 @@ export default defineConfig({
     open: true
   },
   plugins: [
+    yaml(),
     {
       name: 'yaml-api',
       configureServer(server) {
