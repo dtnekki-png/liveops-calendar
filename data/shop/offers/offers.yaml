@@ -1,0 +1,956 @@
+- id: 1
+  type: Offer
+  count: 3
+  startDate: 2025-11-28T00:00:00+03
+  endDate: 2025-12-01T00:00:00+03
+  shopItem:
+    id: 10001
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 5000 # 5000 XTR
+        priceUsd: 100.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-mythic-trio.png
+      xsolla:
+        title: Offer
+        price: 99.99 # USD
+    loot: [
+      { type: STANDARD_HERO, rarity: MYTHIC },
+      { type: CUSTOM_HERO, setId: 5, rarity: MYTHIC },
+      { type: CUSTOM_HERO, setId: 6, rarity: MYTHIC },
+      { type: CURRENCY, currency: BOOST, count: 500 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 500 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 500 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/mythic_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_BLACK_FRIDAY_1_TITLE,
+      description: SHOP_OFFERS_BLACK_FRIDAY_1_DESCRIPTION,
+      image: content/shop/offers/h-mythic-trio.png,
+      backgroundImage: content/shop/backgrounds/bar.png
+    }
+
+- id: 2
+  type: Offer
+  count: 3
+  startDate: 2025-11-28T00:00:00+03
+  endDate: 2025-12-01T00:00:00+03
+  shopItem:
+    id: 10002
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-golden-trio.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: STANDARD_HERO, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 5, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 6, rarity: LEGENDARY },
+      { type: CURRENCY, currency: BOOST, count: 200 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 200 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 450,
+      resourseType: vertical,
+      title: SHOP_OFFERS_BLACK_FRIDAY_2_TITLE,
+      description: SHOP_OFFERS_BLACK_FRIDAY_2_DESCRIPTION,
+      image: content/shop/offers/h-golden-trio.png,
+      backgroundImage: content/shop/backgrounds/robodump.png
+    }
+
+- id: 3
+  type: Offer
+  count: 3
+  startDate: 2025-11-28T00:00:00+03
+  endDate: 2025-12-01T00:00:00+03
+  shopItem:
+    id: 10003
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/Icons/gems_big.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CURRENCY, currency: BOOST, count: 600 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 600 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 600 }
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/legendary.png,
+      discount: 250,
+      resourseType: horizontal,
+    }
+
+- id: 4
+  type: Offer
+  count: 3
+  startDate: 2025-11-28T00:00:00+03
+  endDate: 2025-12-01T00:00:00+03
+  shopItem:
+    id: 10004
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 750 # 750 XTR
+        priceUsd: 15.00 # for analytics sum_of_payments
+        photoUrl: content/shop/Icons/gems_big.png
+      xsolla:
+        title: Offer
+        price: 14.99 # USD
+    loot: [
+      { type: CURRENCY, currency: VAMPIRES_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/mythic.png,
+      discount: 600,
+      resourseType: horizontal
+    }
+
+- id: 5 # start vampires event
+  type: Offer
+  count: 3
+  startDate: 2026-02-20T00:00:00+03
+  endDate: 2026-02-22T00:00:00+03
+  shopItem:
+    id: 10005
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-crimson-cartel-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 5, rarity: EPIC },
+      { type: CURRENCY, currency: VAMPIRES_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_VAMPIRES_EVENT_1_TITLE,
+      description: SHOP_OFFERS_VAMPIRES_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-crimson-cartel-epic.png,
+      backgroundImage: content/shop/backgrounds/robodump.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 6 # end vampires event
+  type: Offer
+  count: 3
+  startDate: 2026-02-26T00:00:00+03
+  endDate: 2026-02-28T00:00:00+03
+  shopItem:
+    id: 10006
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-crimson-cartel-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 5, rarity: LEGENDARY },
+      { type: CURRENCY, currency: VAMPIRES_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_VAMPIRES_EVENT_2_TITLE,
+      description: SHOP_OFFERS_VAMPIRES_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-crimson-cartel-legendary.png,
+      backgroundImage: content/shop/backgrounds/robodump.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 7 # start shadows event
+  type: Offer
+  count: 3
+  startDate: 2026-02-06T00:00:00+03
+  endDate: 2026-02-08T00:00:00+03
+  shopItem:
+    id: 10007
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-shadows-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 6, rarity: EPIC },
+      { type: CURRENCY, currency: SHADOWS_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_SHADOWS_EVENT_1_TITLE,
+      description: SHOP_OFFERS_SHADOWS_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-shadows-epic.png,
+      backgroundImage: content/shop/backgrounds/shadows.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 8 # end shadows event
+  type: Offer
+  count: 3
+  startDate: 2026-02-12T00:00:00+03
+  endDate: 2026-02-14T00:00:00+03
+  shopItem:
+    id: 10008
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-shadows-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 6, rarity: LEGENDARY },
+      { type: CURRENCY, currency: SHADOWS_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_SHADOWS_EVENT_2_TITLE,
+      description: SHOP_OFFERS_SHADOWS_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-shadows-legendary.png,
+      backgroundImage: content/shop/backgrounds/shadows.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 9 # start urban brutes event
+  type: Offer
+  count: 3
+  startDate: 2026-02-27T00:00:00+03
+  endDate:   2026-03-01T00:00:00+03
+  shopItem:
+    id: 10009
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-urban-brutes-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 1, rarity: EPIC },
+      { type: CURRENCY, currency: URBAN_BRUTES_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_URBAN_BRUTES_EVENT_1_TITLE,
+      description: SHOP_OFFERS_URBAN_BRUTES_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-urban-brutes-epic.png,
+      backgroundImage: content/shop/backgrounds/street.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 10 # end urban brutes event
+  type: Offer
+  count: 3
+  startDate: 2026-03-05T00:00:00+03
+  endDate: 2026-03-07T00:00:00+03
+  shopItem:
+    id: 10010
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-urban-brutes-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 1, rarity: LEGENDARY },
+      { type: CURRENCY, currency: URBAN_BRUTES_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_URBAN_BRUTES_EVENT_2_TITLE,
+      description: SHOP_OFFERS_URBAN_BRUTES_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-urban-brutes-legendary.png,
+      backgroundImage: content/shop/backgrounds/street.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 11 # start winter vampires event
+  type: Offer
+  count: 3
+  startDate: 2025-12-26T00:00:00+03
+  endDate: 2025-12-30T00:00:00+03
+  shopItem:
+    id: 10011
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-crimson-cartel-winter-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 7, rarity: EPIC },
+      { type: CURRENCY, currency: VAMPIRES_WINTER_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_VAMPIRES_WINTER_EVENT_1_TITLE,
+      description: SHOP_OFFERS_VAMPIRES_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-crimson-cartel-winter-epic.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 12 # end winter vampires event
+  type: Offer
+  count: 3
+  startDate: 2025-12-30T00:00:00+03
+  endDate: 2026-01-03T00:00:00+03
+  shopItem:
+    id: 10012
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-crimson-cartel-winter-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 7, rarity: LEGENDARY },
+      { type: CURRENCY, currency: VAMPIRES_WINTER_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_VAMPIRES_WINTER_EVENT_2_TITLE,
+      description: SHOP_OFFERS_VAMPIRES_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-crimson-cartel-winter-legendary.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 13 # free pack for winter vampires event
+  type: Offer
+  count: 1
+  startDate: 2025-12-26T00:00:00+03
+  endDate: 2026-01-03T00:00:00+03
+  shopItem:
+    id: 10013
+    category: OFFER
+    loot: [
+      { type: CUSTOM_HERO, setId: 7, rarity: RARE },
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      colorImage: content/shop/colors/rare_1.svg,
+      title: SHOP_OFFERS_WINTER_EVENT_TITLE,
+      description: SHOP_OFFERS_VAMPIRES_WINTER_EVENT_DESCRIPTION,
+      image: content/shop/offers/h-crimson-cartel-winter-rare.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 14 # free loot №1 for winter vampires event
+  type: Offer
+  count: 1
+  startDate: 2025-12-30T00:00:00+03
+  endDate: 2026-01-03T00:00:00+03
+  shopItem:
+    id: 10014
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: VAMPIRES_WINTER_EVENT_KEY, count: 5 },
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/special.png
+    }
+
+- id: 15 # free loot №2 for winter vampires event
+  type: Offer
+  count: 1
+  startDate: 2025-12-30T00:00:00+03
+  endDate: 2026-01-03T00:00:00+03
+  shopItem:
+    id: 10015
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: BOOST, count: 50 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 50 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 50 }
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/common.png
+    }
+
+- id: 16 # start winter urban-brutes event
+  type: Offer
+  count: 3
+  startDate: 2026-01-02T00:00:00+03
+  endDate: 2026-01-06T00:00:00+03
+  shopItem:
+    id: 10016
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-urban-brutes-winter-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 8, rarity: EPIC },
+      { type: CURRENCY, currency: URBAN_BRUTES_WINTER_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_URBAN_BRUTES_WINTER_EVENT_1_TITLE,
+      description: SHOP_OFFERS_URBAN_BRUTES_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-urban-brutes-winter-epic.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 17 # end winter urban-brutes event
+  type: Offer
+  count: 3
+  startDate: 2026-01-06T00:00:00+03
+  endDate: 2026-01-10T00:00:00+03
+  shopItem:
+    id: 10017
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-urban-brutes-winter-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 8, rarity: LEGENDARY },
+      { type: CURRENCY, currency: URBAN_BRUTES_WINTER_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_URBAN_BRUTES_WINTER_EVENT_2_TITLE,
+      description: SHOP_OFFERS_URBAN_BRUTES_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-urban-brutes-winter-legendary.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 18 # free pack for winter urban-brutes event
+  type: Offer
+  count: 1
+  startDate: 2026-01-02T00:00:00+03
+  endDate: 2026-01-10T00:00:00+03
+  shopItem:
+    id: 10018
+    category: OFFER
+    loot: [
+      { type: CUSTOM_HERO, setId: 8, rarity: RARE },
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      colorImage: content/shop/colors/rare_1.svg,
+      title: SHOP_OFFERS_WINTER_EVENT_TITLE,
+      description: SHOP_OFFERS_URBAN_BRUTES_WINTER_EVENT_DESCRIPTION,
+      image: content/shop/offers/h-urban-brutes-winter-rare.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 19 # free loot №1 for winter urban brutes event
+  type: Offer
+  count: 1
+  startDate: 2026-01-06T00:00:00+03
+  endDate: 2026-01-10T00:00:00+03
+  shopItem:
+    id: 10019
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: URBAN_BRUTES_WINTER_EVENT_KEY, count: 5 },
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/legendary.png
+    }
+
+- id: 20 # free loot №2 for winter urban brutes event
+  type: Offer
+  count: 1
+  startDate: 2026-01-06T00:00:00+03
+  endDate: 2026-01-10T00:00:00+03
+  shopItem:
+    id: 10020
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: BOOST, count: 50 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 50 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 50 }
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/common.png
+    }
+
+- id: 21 # start winter shadows event
+  type: Offer
+  count: 3
+  startDate: 2026-01-09T00:00:00+03
+  endDate: 2026-01-13T00:00:00+03
+  shopItem:
+    id: 10021
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-shadows-winter-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 9, rarity: EPIC },
+      { type: CURRENCY, currency: SHADOWS_WINTER_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_SHADOWS_WINTER_EVENT_1_TITLE,
+      description: SHOP_OFFERS_SHADOWS_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-shadows-winter-epic.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 22 # end winter shadows event
+  type: Offer
+  count: 3
+  startDate: 2026-01-13T00:00:00+03
+  endDate: 2026-01-17T00:00:00+03
+  shopItem:
+    id: 10022
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-shadows-winter-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 9, rarity: LEGENDARY },
+      { type: CURRENCY, currency: SHADOWS_WINTER_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_SHADOWS_WINTER_EVENT_2_TITLE,
+        description: SHOP_OFFERS_SHADOWS_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-shadows-winter-legendary.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 23 # free pack for winter shadows event
+  type: Offer
+  count: 1
+  startDate: 2026-01-09T00:00:00+03
+  endDate: 2026-01-17T00:00:00+03
+  shopItem:
+    id: 10023
+    category: OFFER
+    loot: [
+      { type: CUSTOM_HERO, setId: 9, rarity: RARE },
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      colorImage: content/shop/colors/rare_1.svg,
+      title: SHOP_OFFERS_WINTER_EVENT_TITLE,
+      description: SHOP_OFFERS_SHADOWS_WINTER_EVENT_DESCRIPTION,
+      image: content/shop/offers/h-shadows-winter-rare.png,
+      backgroundImage: content/shop/backgrounds/winter.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 24 # free loot №1 for winter shadows event
+  type: Offer
+  count: 1
+  startDate: 2026-01-13T00:00:00+03
+  endDate: 2026-01-17T00:00:00+03
+  shopItem:
+    id: 10024
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: SHADOWS_WINTER_EVENT_KEY, count: 5 },
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/rare.png
+    }
+
+- id: 25 # free loot №2 for winter shadows event
+  type: Offer
+  count: 1
+  startDate: 2026-01-13T00:00:00+03
+  endDate: 2026-01-17T00:00:00+03
+  shopItem:
+    id: 10025
+    category: OFFER
+    loot: [
+      { type: CURRENCY, currency: BOOST, count: 50 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 50 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 50 }
+    ]
+    uiData: {
+      kind: VERTICAL,
+      colorImage: content/shop/colors/common.png
+    }
+
+- id: 26 # legendary cat offer №1 FIRST stage
+  type: Offer
+  startDate: 2026-01-28T00:00:00+03
+  endDate: 2026-02-05T00:00:00+03
+  shopItem:
+    id: 10026
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1500 # 1500 XTR
+        priceUsd: 30.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-legendary.png
+      xsolla:
+        title: Offer
+        price: 29.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CURRENCY, currency: BOOST, count: 500 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 400 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_1_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_1_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-legendary.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 3 ]
+    }
+
+- id: 27 # epic cat offer №2 FIRST stage
+  type: Offer
+  startDate: 2026-01-28T00:00:00+03
+  endDate: 2026-02-05T00:00:00+03
+  shopItem:
+    id: 10027
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CURRENCY, currency: BOOST, count: 400 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 300 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 400,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_2_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_2_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-epic.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 3 ]
+    }
+
+- id: 28 # legendary cat offer №1 SECOND stage
+  type: Offer
+  startDate: 2026-02-07T00:00:00+03
+  endDate: 2026-02-12T00:00:00+03
+  shopItem:
+    id: 10028
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1500 # 1500 XTR
+        priceUsd: 30.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-legendary.png
+      xsolla:
+        title: Offer
+        price: 29.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CURRENCY, currency: BOOST, count: 500 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 400 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_1_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_1_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-legendary.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 3 ]
+    }
+
+- id: 29 # epic cat offer №2 SECOND stage
+  type: Offer
+  startDate: 2026-02-07T00:00:00+03
+  endDate: 2026-02-12T00:00:00+03
+  shopItem:
+    id: 10029
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CURRENCY, currency: BOOST, count: 400 },
+      { type: CURRENCY, currency: SUPER_BOOST, count: 300 },
+      { type: CURRENCY, currency: ULTRA_BOOST, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 400,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_2_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_2_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-epic.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 3 ]
+    }
+
+- id: 30 # start night beasts event
+  type: Offer
+  count: 3
+  startDate: 2026-02-13T00:00:00+03
+  endDate: 2026-02-15T00:00:00+03
+  shopItem:
+    id: 10030
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 500 # 500 XTR
+        priceUsd: 10.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-epic.png
+      xsolla:
+        title: Offer
+        price: 9.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: EPIC },
+      { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 10 },
+      { type: CURRENCY, currency: HARD, count: 200 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 2,
+      colorImage: content/shop/colors/epic_1.svg,
+      discount: 300,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_EVENT_1_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_EVENT_1_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-epic.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 1 ]
+    }
+
+- id: 31 # end night beasts event
+  type: Offer
+  count: 3
+  startDate: 2026-02-19T00:00:00+03
+  endDate: 2026-02-21T00:00:00+03
+  shopItem:
+    id: 10031
+    category: OFFER
+    payment:
+      telegram:
+        title: Offer
+        description: Offer
+        price: 1000 # 1000 XTR
+        priceUsd: 20.00 # for analytics sum_of_payments
+        photoUrl: content/shop/offers/h-night-beasts-legendary.png
+      xsolla:
+        title: Offer
+        price: 19.99 # USD
+    loot: [
+      { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY },
+      { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 30 },
+      { type: CURRENCY, currency: HARD, count: 300 }
+    ]
+    uiData: {
+      kind: HORIZONTAL,
+      showPosition: 1,
+      colorImage: content/shop/colors/legendary_1.svg,
+      discount: 500,
+      resourseType: vertical,
+      title: SHOP_OFFERS_NIGHT_BEASTS_EVENT_2_TITLE,
+      description: SHOP_OFFERS_NIGHT_BEASTS_EVENT_2_DESCRIPTION,
+      image: content/shop/offers/h-night-beasts-legendary.png,
+      backgroundImage: content/shop/backgrounds/bar.png,
+      multipliers: [ 1 ]
+    }
+

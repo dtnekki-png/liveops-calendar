@@ -1,0 +1,73 @@
+#- id: 2004
+#  category: BOOSTER_PACK
+#  payment:
+#    internal:
+#      price: 200
+#      currency: HARD
+#  loot: [
+#    { type: CUSTOM_HERO, setId: 4, rarity: RARE, probability: 0.9 },
+#    { type: CUSTOM_HERO, setId: 4, rarity: EPIC, probability: 0.1, guaranteeId: 2, guaranteeAt: 5 }
+#  ]
+#  uiData: {
+#    kind: SUMMER,
+#    title: SHOP_OFFERS_RARE_SUMMER_PACK_TITLE,
+#    description: SHOP_OFFERS_RARE_SUMMER_PACK_TEXT,
+#    subDescription: SHOP_OFFERS_RARE_SUMMER_PACK_SUBTEXT,
+#    image: content/shop/Icons/epic_summer_pack.png
+#  }
+
+# EVENT №1 (VAMPIRES) packs id: 2005, 2006, 2007, 2008 - DON'T USE IT!!!
+# EVENT №2 (URBAN_BRUTES) packs id: 2009, 2010, 2011, 2012 - DON'T USE IT!!!
+
+- id: 2001
+  category: BOOSTER_PACK
+  payment:
+    internal:
+      price: 50
+      currency: HARD
+  loot: [
+    { type: STANDARD_HERO, rarity: COMMON, probability: 0.9 },
+    { type: STANDARD_HERO, rarity: RARE, probability: 0.1 }
+  ]
+  uiData: {
+    kind: COMMON,
+    title: SHOP_OFFERS_COMMON_PACK_TITLE,
+    description: SHOP_OFFERS_COMMON_PACK_TEXT,
+    image: content/shop/Icons/common_pack.png
+  }
+
+- id: 2002
+  category: BOOSTER_PACK
+  payment:
+    internal:
+      price: 150
+      currency: HARD
+  loot: [
+    { type: STANDARD_HERO, rarity: RARE, probability: 0.9 },
+    { type: STANDARD_HERO, rarity: EPIC, probability: 0.1 }
+  ]
+  uiData: {
+    kind: RARE,
+    title: SHOP_OFFERS_RARE_PACK_TITLE,
+    description: SHOP_OFFERS_RARE_PACK_TEXT,
+    image: content/shop/Icons/rare_pack.png
+  }
+
+- id: 2003
+  category: BOOSTER_PACK
+  payment:
+    internal:
+      price: 450
+      currency: HARD
+  loot: [
+    { type: STANDARD_HERO, rarity: EPIC, probability: 0.9 },
+    { type: STANDARD_HERO, rarity: LEGENDARY, probability: 0.1, guaranteeId: 1, guaranteeAt: 10 }
+  ]
+  uiData: {
+    kind: EPIC,
+    title: SHOP_OFFERS_EPIC_PACK_TITLE,
+    description: SHOP_OFFERS_EPIC_PACK_TEXT,
+    subDescription: SHOP_OFFERS_EPIC_PACK_SUBTEXT,
+    image: content/shop/Icons/epic_pack.png
+  }
+

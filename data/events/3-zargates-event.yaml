@@ -1,0 +1,41 @@
+# Ивент заргейтса должен содержать ZARGATES в имени
+id: 1003
+name: ZARGATES
+schedule:
+  - start: 2025-09-16T03:00:00+03
+    questEnd: 2025-11-05T02:59:59+03
+    end: 2025-11-05T02:59:59+03
+platforms: [TG]
+uiData: {
+    title: ZARGATES_TITLE,
+    description: ZARGATES_DESCRIPTION,
+    infoTitle: ZARGATES_INFO_TITLE,
+    infoText: ZARGATES_INFO_TEXT,
+    link: "https://t.me/ZARGatesBot/twa?startapp=453530000",
+    icon: content/events/Icons/zargates-task.png,
+    onBanner: true,
+    bannerIcon: content/events/Icons/zargates-task-small.png,
+    popupImage: content/events/Icons/zargates.png
+  }
+questSlots:
+  - quests:
+      - id: 10
+        type: EVOLVE_HEROES
+        value: 20
+        loot: [ { type: CURRENCY, currency: HARD, count: 20 } ]
+        uiData:
+          icon: content/events/Icons/icon-zargates.svg
+  - quests:
+      - id: 110
+        type: EVOLVE_HEROES
+        value: 40
+        loot: [ { type: CURRENCY, currency: HARD, count: 50 } ]
+        uiData:
+          icon: content/events/Icons/icon-zargates.svg
+  - quests:
+      - id: 210
+        type: EVOLVE_HEROES
+        value: 80
+        loot: [ { type: CURRENCY, currency: EPIC_SHARD_1, count: 30 } ]
+        uiData:
+          icon: content/events/Icons/icon-zargates.svg

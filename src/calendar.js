@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════════════ */
 
 import { daysInMonth } from './data.js';
-import { renderEventBlock, renderStaticBlock, renderStaticDynamicBlock, renderEntityChip } from './blocks.js';
+import { renderEventBlock, renderOfferBlock, renderStaticBlock, renderStaticDynamicBlock, renderEntityChip } from './blocks.js';
 import { getHolidaysForMonth } from './holidays.js';
 
 const WEEKDAY_NAMES = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
@@ -86,7 +86,7 @@ export function renderTimelineHeader(year, month) {
 /**
  * Render a section with rows
  */
-export function renderSection(title, type, blocks, entityRows) {
+export function renderSection(title, type, blocks, entityRows, showAddButton = false) {
   const blockCount = blocks ? blocks.length : (entityRows ? entityRows.flat().length : 0);
   const colWidth = getColWidth();
 
@@ -110,8 +110,9 @@ export function renderSection(title, type, blocks, entityRows) {
     // Group blocks by name or render individually
     blocks.forEach(block => {
       const renderer = type === 'event' ? renderEventBlock :
-        type === 'static' ? renderStaticBlock :
-          renderStaticDynamicBlock;
+        type === 'offer' ? renderOfferBlock :
+          type === 'static' ? renderStaticBlock :
+            renderStaticDynamicBlock;
 
       contentHtml += `
         <div class="calendar-row">
@@ -126,12 +127,17 @@ export function renderSection(title, type, blocks, entityRows) {
     });
   }
 
+  const addBtnHtml = showAddButton
+    ? `<button class="row-section__add" data-add-type="${type}" title="Создать новый">+ Новый</button>`
+    : '';
+
   return `
     <div class="row-section" data-section-type="${type}">
       <div class="row-section__header">
         <span class="row-section__chevron">▼</span>
         <span class="row-section__title">${title}</span>
         <span class="row-section__badge">${blockCount}</span>
+        ${addBtnHtml}
         <button class="row-section__hide" title="Скрыть секцию">✕</button>
       </div>
       <div class="row-section__content">

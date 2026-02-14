@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && xcopy data dist\\data /E /I /Y /Q",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^6.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
   }
 }

@@ -1,0 +1,10 @@
+include:
+  - 3-zargates-event
+  - 4-vampires-event
+  - 4-zargates-event
+  - 2-urban-brutes-event
+  - 5-shadows-event
+  - 6-night-beasts-event
+  - 101-vampires-winter-event
+  - 102-urban-brutes-winter-event
+  - 103-shadows-winter-event

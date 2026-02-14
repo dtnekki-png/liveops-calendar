@@ -1,0 +1,402 @@
+id: 6
+name: NIGHT_BEASTS
+uiData: {
+  title: NIGHT_BEASTS_EVENT_TITLE,
+  cardBackgroundImage: content/events/Icons/event5/event-1.png,
+  newEventPopupBackground: content/events/Icons/event5/bg-popup.png,
+  cardBackgroundImageMobile: content/events/Icons/event5/event-1-mob.png,
+  cardMainImage: content/events/Icons/event5/pack_all.png,
+  backgroundImage: content/events/Icons/event5/bg-1.png,
+  backgroundImageMobile: content/events/Icons/event5/bg-1-mob.png,
+  firstMainImage: content/events/Icons/event5/pack-2.png,
+  secondMainImage: content/events/Icons/event5/pack-3.png,
+  thirdMainImage: content/events/Icons/event5/pack-1.png,
+  labInfoPopupContent: [
+    { title: EVENT_1_LAB_INFO_POPUP_PARAGRAPH_1_TITLE, text: EVENT_1_LAB_INFO_POPUP_PARAGRAPH_1_TEXT },
+    { title: EVENT_1_LAB_INFO_POPUP_PARAGRAPH_2_TITLE, text: EVENT_1_LAB_INFO_POPUP_PARAGRAPH_2_TEXT }
+  ]
+}
+schedule:
+  - { startPreview: 2026-02-11T00:00:00+03, start: 2026-02-13T00:00:00+03, questEnd: 2026-02-20T00:00:00+03, end: 2026-02-21T00:00:00+03 }
+eventCurrencies: {
+  NIGHT_BEASTS_EVENT_KEY: { compensation: { multiplier: 30, currency: BOOST } },
+}
+rollPricing:
+  1: { internal: { price: 1, currency: NIGHT_BEASTS_EVENT_KEY } }
+  10: { internal: { price: 10, currency: NIGHT_BEASTS_EVENT_KEY } }
+lootPerRoll: [
+  { type: CUSTOM_HERO, setId: 2, rarity: MYTHIC, probability: 0.0015, guaranteeId: 81, guaranteeAt: 200 },
+  { type: CUSTOM_HERO, setId: 2, rarity: LEGENDARY, probability: 0.0038, guaranteeId: 82, guaranteeAt: 80 },
+  { type: CUSTOM_HERO, setId: 2, rarity: EPIC, probability: 0.0133, guaranteeId: 83, guaranteeAt: 45 },
+  { type: CURRENCY, currency: RARE_SHARD_4, count: 20, probability: 0.07 },
+  { type: CURRENCY, currency: COMMON_SHARD_4, count: 20, probability: 0.15 },
+  { type: CURRENCY, currency: BOOST, count: 20, probability: 0.25 },
+  { type: CURRENCY, currency: SUPER_BOOST, count: 20, probability: 0.2 },
+  { type: CURRENCY, currency: ULTRA_BOOST, count: 20, probability: 0.1 },
+  { type: CURRENCY, currency: HARD, count: 15, probability: 0.1614 },
+  { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2, probability: 0.05 }
+]
+questSlots:
+  - quests:
+      - id: 10
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 3
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 20
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 6
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 30
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 9
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 40
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 12
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 50
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 15
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 60
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 18
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 70
+        type: COMPLETE_EVENT_DAILY_QUESTS
+        value: 21
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+  - quests:
+      - id: 110
+        type: EVENT_EVOLVE_HEROES
+        value: 10
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 120
+        type: EVENT_EVOLVE_HEROES
+        value: 30
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 130
+        type: EVENT_EVOLVE_HEROES
+        value: 60
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 140
+        type: EVENT_EVOLVE_HEROES
+        value: 100
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+  - quests:
+      - id: 210
+        type: EVENT_PLAY_FACTION_BATTLES
+        parameters:
+          faction: 4
+        value: 10
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 220
+        type: EVENT_PLAY_FACTION_BATTLES
+        parameters:
+          faction: 4
+        value: 30
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 230
+        type: EVENT_PLAY_FACTION_BATTLES
+        parameters:
+          faction: 4
+        value: 60
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 240
+        type: EVENT_PLAY_FACTION_BATTLES
+        parameters:
+          faction: 4
+        value: 100
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+  - quests:
+      - id: 310
+        type: EVENT_SELL_HERO
+        value: 1
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 320
+        type: EVENT_SELL_HERO
+        value: 3
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 330
+        type: EVENT_SELL_HERO
+        value: 6
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 3 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 340
+        type: EVENT_SELL_HERO
+        value: 10
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 4 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+  - quests:
+      - id: 410
+        type: CLAIM_RARITY_FACTION_HERO
+        value: 1
+        parameters:
+          rarity: COMMON
+          faction: 4
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 420
+        type: CLAIM_RARITY_FACTION_HERO
+        value: 1
+        parameters:
+          rarity: RARE
+          faction: 4
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 430
+        type: CLAIM_RARITY_FACTION_HERO
+        value: 1
+        parameters:
+          rarity: EPIC
+          faction: 4
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 3 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 440
+        type: CLAIM_RARITY_FACTION_HERO
+        value: 1
+        parameters:
+          rarity: LEGENDARY
+          faction: 4
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 4 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 450
+        type: CLAIM_RARITY_FACTION_HERO
+        value: 1
+        parameters:
+          rarity: LEGENDARY
+          faction: 4
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 4 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+  - quests:
+      - id: 510
+        type: SPEND_EVENT_CURRENCIES
+        value: 200
+        parameters:
+          currencies: [HARD]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 2 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 520
+        type: SPEND_EVENT_CURRENCIES
+        value: 600
+        parameters:
+          currencies: [ HARD ]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 3 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 530
+        type: SPEND_EVENT_CURRENCIES
+        value: 1200
+        parameters:
+          currencies: [ HARD ]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 5 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 540
+        type: SPEND_EVENT_CURRENCIES
+        value: 2200
+        parameters:
+          currencies: [ HARD ]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 6 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 550
+        type: SPEND_EVENT_CURRENCIES
+        value: 4200
+        parameters:
+          currencies: [ HARD ]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 8 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+      - id: 560
+        type: SPEND_EVENT_CURRENCIES
+        value: 8200
+        parameters:
+          currencies: [ HARD ]
+        loot: [ { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 10 } ]
+        uiData:
+          icon: content/events/Icons/missions-icon.svg
+offers:
+  - id: 1
+    type: EventBundle
+    count: 1
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 57
+      category: OFFER
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+      }
+
+  - id: 2
+    type: EventBundle
+    count: 2
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 58
+      category: OFFER
+      payment:
+        internal:
+          price: 50
+          currency: HARD
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 1 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+        onPopup: [1]
+      }
+
+  - id: 3
+    type: EventBundle
+    count: 1
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 59
+      category: OFFER
+      payment:
+        telegram:
+          title: Event pack
+          description: Event pack
+          price: 250 # 250 XTR
+          priceUsd: 5.00 # for analytics sum_of_payments
+          photoUrl: content/events/Icons/chest.png
+        xsolla:
+          title: Event pack
+          price: 4.99 # USD
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 10 },
+        { type: CURRENCY, currency: SUPER_BOOST, count: 100 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+        discount: 300,
+        onPopup: [1, 10]
+      }
+
+  - id: 4
+    type: EventBundle
+    count: 2
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 60
+      category: OFFER
+      payment:
+        telegram:
+          title: Event pack
+          description: Event pack
+          price: 1000 # 1000 XTR
+          priceUsd: 20.00 # for analytics sum_of_payments
+          photoUrl: content/events/Icons/chest.png
+        xsolla:
+          title: Event pack
+          price: 19.99 # USD
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 30 },
+        { type: CURRENCY, currency: SUPER_BOOST, count: 200 },
+        { type: CURRENCY, currency: ULTRA_BOOST, count: 100 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+        discount: 200,
+        onPopup: [10]
+      }
+
+  - id: 5
+    type: EventBundle
+    count: 2
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 61
+      category: OFFER
+      payment:
+        telegram:
+          title: Event pack
+          description: Event pack
+          price: 2500 # 2500 XTR
+          priceUsd: 50.00 # for analytics sum_of_payments
+          photoUrl: content/events/Icons/chest.png
+        xsolla:
+          title: Event pack
+          price: 49.99 # USD
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 60 },
+        { type: CURRENCY, currency: SUPER_BOOST, count: 550 },
+        { type: CURRENCY, currency: ULTRA_BOOST, count: 250 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+        discount: 150
+      }
+
+  - id: 6
+    type: EventBundle
+    period: 86400000 # 24 hrs
+    shopItem:
+      id: 62
+      category: OFFER
+      payment:
+        telegram:
+          title: Event pack
+          description: Event pack
+          price: 5000 # 5000 XTR
+          priceUsd: 100.00 # for analytics sum_of_payments
+          photoUrl: content/events/Icons/chest.png
+        xsolla:
+          title: Event pack
+          price: 99.99 # USD
+      loot: [
+        { type: CURRENCY, currency: NIGHT_BEASTS_EVENT_KEY, count: 100 },
+        { type: CURRENCY, currency: SUPER_BOOST, count: 800 },
+        { type: CURRENCY, currency: ULTRA_BOOST, count: 400 }
+      ]
+      uiData: {
+        image: content/events/Icons/chest.webp,
+        discount: 100,
+        timeVisual: false
+      }

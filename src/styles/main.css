@@ -1152,3 +1152,714 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* ═══════════════════════════════════════
+   OFFER BLOCKS
+   ═══════════════════════════════════════ */
+.block-bar--offer {
+    background: linear-gradient(135deg, rgba(255, 181, 71, 0.25) 0%, rgba(255, 181, 71, 0.12) 100%);
+    border-color: rgba(255, 181, 71, 0.2);
+}
+
+/* ═══════════════════════════════════════
+   EDITOR COMPONENTS
+   ═══════════════════════════════════════ */
+.editor-field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.editor-field__label {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.editor-field__input {
+    font-size: var(--text-sm);
+    font-family: var(--font-mono);
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--sp-1) var(--sp-2);
+    transition: all var(--duration) var(--ease-out);
+    width: 100%;
+}
+
+.editor-field__input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-dim);
+}
+
+.editor-field__input[readonly],
+.editor-field__input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.editor-field__input--compact {
+    padding: 2px 6px;
+    font-size: 11px;
+}
+
+/* Loot table */
+.editor-loot-table {
+    overflow-x: auto;
+}
+
+.loot-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-xs);
+}
+
+.loot-table th {
+    text-align: left;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: var(--sp-1) var(--sp-2);
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+}
+
+.loot-table td {
+    padding: 2px var(--sp-1);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Schedule editor */
+.editor-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+}
+
+.editor-schedule-window {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.editor-schedule-window__header {
+    padding: var(--sp-1) var(--sp-2);
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+}
+
+.editor-schedule-window__title {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--accent-text);
+}
+
+.editor-schedule-window__fields {
+    padding: var(--sp-2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-2);
+}
+
+/* Quest slots */
+.editor-quest-slot {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--sp-1);
+}
+
+.editor-quest-slot summary {
+    padding: var(--sp-1) var(--sp-2);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    background: var(--bg-card);
+}
+
+.editor-quest-slot summary:hover {
+    background: var(--bg-card-hover);
+}
+
+.editor-quest-slot__content {
+    padding: var(--sp-2);
+}
+
+.editor-quest-row {
+    display: flex;
+    gap: var(--sp-2);
+    align-items: center;
+    padding: 2px 0;
+    font-size: var(--text-xs);
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.editor-quest-row__id {
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    min-width: 40px;
+}
+
+.editor-quest-row__type {
+    color: var(--accent-text);
+    min-width: 80px;
+}
+
+.editor-quest-row__value {
+    font-family: var(--font-mono);
+    min-width: 50px;
+}
+
+.editor-quest-row__loot {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+/* Event offers */
+.editor-offer-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--sp-2);
+    overflow: hidden;
+}
+
+.editor-offer-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-1) var(--sp-2);
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    font-size: var(--text-xs);
+}
+
+.editor-offer-card__id {
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+}
+
+.editor-offer-card__type {
+    color: var(--accent-text);
+    font-weight: 500;
+}
+
+.editor-offer-card__count {
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    margin-left: auto;
+}
+
+.editor-offer-card__body {
+    padding: var(--sp-1) var(--sp-2);
+    display: flex;
+    gap: var(--sp-3);
+    font-size: var(--text-xs);
+}
+
+.editor-offer-card__price {
+    font-weight: 600;
+    color: var(--warning);
+}
+
+.editor-offer-card__loot {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+/* Shop items */
+.editor-shop-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+}
+
+.editor-shop-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--sp-2);
+}
+
+.editor-shop-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-xs);
+    margin-bottom: 2px;
+}
+
+.editor-shop-item__id {
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+}
+
+.editor-shop-item__price {
+    font-weight: 600;
+    color: var(--warning);
+}
+
+.editor-shop-item__loot {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+/* ═══════════════════════════════════════
+   BUTTONS — Secondary
+   ═══════════════════════════════════════ */
+.btn--secondary {
+    background: var(--bg-card);
+    border-color: var(--accent);
+    color: var(--accent-text);
+}
+
+.btn--secondary:hover {
+    background: var(--accent-dim);
+}
+
+/* ═══════════════════════════════════════
+   TOAST NOTIFICATIONS
+   ═══════════════════════════════════════ */
+.toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    z-index: 200;
+    opacity: 0;
+    transition: all 300ms var(--ease-out);
+    box-shadow: var(--shadow-lg);
+}
+
+.toast--visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.toast--success {
+    background: var(--success);
+    color: white;
+}
+
+.toast--error {
+    background: var(--danger);
+    color: white;
+}
+
+.toast--info {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+/* ═══════════════════════════════════════
+   DATE PICKER POPOVER
+   ═══════════════════════════════════════ */
+.dp-popover {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(108, 92, 231, 0.08);
+    padding: var(--sp-3);
+    width: 280px;
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+    transition: opacity 200ms var(--ease-out), transform 200ms var(--ease-out);
+    user-select: none;
+}
+
+.dp-popover--visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.dp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--sp-2);
+    padding: 0 var(--sp-1);
+}
+
+.dp-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.dp-nav {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 10px;
+    transition: all var(--duration) var(--ease-out);
+}
+
+.dp-nav:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+
+.dp-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    margin-bottom: var(--sp-1);
+}
+
+.dp-weekday {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 4px 0;
+}
+
+.dp-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.dp-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 120ms var(--ease-out);
+    font-family: var(--font-mono);
+}
+
+.dp-day:hover:not(.dp-day--empty) {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+}
+
+.dp-day--empty {
+    cursor: default;
+}
+
+.dp-day--today {
+    color: var(--accent);
+    font-weight: 700;
+    position: relative;
+}
+
+.dp-day--today::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.dp-day--selected {
+    background: var(--accent) !important;
+    color: white !important;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(108, 92, 231, 0.3);
+}
+
+.dp-day--weekend {
+    color: var(--danger);
+    opacity: 0.7;
+}
+
+.dp-day--weekend:hover {
+    opacity: 1;
+}
+
+/* Time picker */
+.dp-time {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: var(--sp-2) var(--sp-1);
+    margin-top: var(--sp-2);
+    border-top: 1px solid var(--border);
+}
+
+.dp-time__label {
+    font-size: var(--text-sm);
+}
+
+.dp-time__select {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    padding: var(--sp-1) var(--sp-2);
+    cursor: pointer;
+    transition: border-color var(--duration) var(--ease-out);
+}
+
+.dp-time__select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.dp-time__colon {
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: var(--text-base);
+}
+
+/* Footer buttons */
+.dp-footer {
+    display: flex;
+    gap: var(--sp-2);
+    padding-top: var(--sp-2);
+    margin-top: var(--sp-2);
+    border-top: 1px solid var(--border);
+}
+
+.dp-today-btn,
+.dp-apply-btn {
+    flex: 1;
+    padding: var(--sp-1) var(--sp-2);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--duration) var(--ease-out);
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.dp-today-btn {
+    background: var(--bg-card);
+    border-color: var(--border);
+    color: var(--text-secondary);
+}
+
+.dp-today-btn:hover {
+    background: var(--bg-card-hover);
+    color: var(--text-primary);
+}
+
+.dp-apply-btn {
+    background: var(--accent);
+    color: white;
+}
+
+.dp-apply-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: var(--shadow-glow);
+}
+
+/* ═══════════════════════════════════════
+   DATE FIELD WRAPPER
+   ═══════════════════════════════════════ */
+.editor-field--date {
+    position: relative;
+}
+
+.editor-field__date-wrap {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.editor-field__input--date {
+    flex: 1;
+    cursor: default;
+}
+
+.dp-trigger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 14px;
+    transition: all var(--duration) var(--ease-out);
+    flex-shrink: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.dp-trigger:hover {
+    background: var(--accent-dim);
+    border-color: var(--accent);
+    transform: scale(1.08);
+}
+
+/* ═══════════════════════════════════════
+   EDIT MODE TOGGLE
+   ═══════════════════════════════════════ */
+.overlay-mode-toggle {
+    padding: var(--sp-1) var(--sp-3);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--duration) var(--ease-out);
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.overlay-mode-toggle:hover {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+    color: var(--accent-text);
+}
+
+/* When in edit mode */
+.overlay-panel--editing .overlay-mode-toggle {
+    background: var(--accent-dim);
+    border-color: var(--accent);
+    color: var(--accent-text);
+}
+
+/* Edit mode visual cues on inputs */
+.overlay-panel--editing .editor-field__input:not([readonly]):not(:disabled) {
+    border-color: var(--border-hover);
+    background: var(--bg-input);
+}
+
+.overlay-panel--editing .editor-field__input:not([readonly]):not(:disabled):focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-dim);
+}
+
+/* View mode: inputs look like static text */
+.overlay-panel:not(.overlay-panel--editing) .editor-field__input {
+    background: transparent;
+    border-color: transparent;
+    color: var(--text-primary);
+    cursor: default;
+}
+
+/* ═══════════════════════════════════════
+   CREATE NEW BUTTON (section header)
+   ═══════════════════════════════════════ */
+.row-section__add {
+    margin-left: auto;
+    margin-right: var(--sp-2);
+    padding: 2px 10px;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--duration) var(--ease-out);
+    border: 1px solid var(--accent);
+    background: var(--accent-dim);
+    color: var(--accent-text);
+    white-space: nowrap;
+}
+
+.row-section__add:hover {
+    background: var(--accent);
+    color: white;
+    box-shadow: var(--shadow-glow);
+}
+
+/* Override hide button margin-left since add button takes it */
+.row-section__header .row-section__hide {
+    margin-left: 0;
+}
+
+/* ═══════════════════════════════════════
+   DELETE BUTTON
+   ═══════════════════════════════════════ */
+.btn--danger {
+    background: var(--danger-dim);
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.btn--danger:hover {
+    background: var(--danger);
+    color: white;
+}
+
+/* ═══════════════════════════════════════
+   CONFIRMATION DIALOG
+   ═══════════════════════════════════════ */
+.confirm-dialog-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 200ms var(--ease-out);
+}
+
+.confirm-dialog-backdrop--visible {
+    opacity: 1;
+}
+
+.confirm-dialog {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-hover);
+    border-radius: var(--radius-lg);
+    padding: var(--sp-6);
+    min-width: 320px;
+    max-width: 400px;
+    box-shadow: var(--shadow-lg);
+    transform: scale(0.95);
+    transition: transform 200ms var(--ease-out);
+}
+
+.confirm-dialog-backdrop--visible .confirm-dialog {
+    transform: scale(1);
+}
+
+.confirm-dialog__title {
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--sp-2);
+}
+
+.confirm-dialog__message {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--sp-4);
+}
+
+.confirm-dialog__actions {
+    display: flex;
+    gap: var(--sp-3);
+    justify-content: flex-end;
+}

@@ -1,0 +1,141 @@
+#4001, 4002, 4003, 4004, 4005 - old boost
+- id: 4011
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 100
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: BOOST, count: 100 } ]
+  uiData: {
+    image: content/shop/Icons/boost-cola-one.svg
+  }
+
+- id: 4012
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 180
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: BOOST, count: 200 } ]
+  uiData: {
+    discount: 10,
+    image: content/shop/Icons/boost-cola-few.svg
+  }
+
+- id: 4013
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 400
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: BOOST, count: 500 } ]
+  uiData: {
+    discount: 25,
+    image: content/shop/Icons/boost-cola-many.svg
+  }
+
+- id: 4014
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 720
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: BOOST, count: 1000 } ]
+  uiData: {
+    discount: 40,
+    image: content/shop/Icons/boost-cola-lots.svg
+  }
+
+- id: 4021
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 180
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: SUPER_BOOST, count: 100 } ]
+  uiData: {
+    image: content/shop/Icons/super-cola-one.svg
+  }
+
+- id: 4022
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 300
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: SUPER_BOOST, count: 200 } ]
+  uiData: {
+    discount: 10,
+    image: content/shop/Icons/super-cola-few.svg
+  }
+
+- id: 4023
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 620
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: SUPER_BOOST, count: 500 } ]
+  uiData: {
+    discount: 25,
+    image: content/shop/Icons/super-cola-many.svg
+  }
+
+- id: 4024
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 1050
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: SUPER_BOOST, count: 1000 } ]
+  uiData: {
+    discount: 40,
+    image: content/shop/Icons/super-cola-lots.svg
+  }
+
+- id: 4031
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 360
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: ULTRA_BOOST, count: 100 } ]
+  uiData: {
+    image: content/shop/Icons/ultra-cola-one.svg
+  }
+
+- id: 4032
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 500
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: ULTRA_BOOST, count: 200 } ]
+  uiData: {
+    discount: 10,
+    image: content/shop/Icons/ultra-cola-few.svg
+  }
+
+- id: 4033
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 950
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: ULTRA_BOOST, count: 500 } ]
+  uiData: {
+    discount: 25,
+    image: content/shop/Icons/ultra-cola-many.svg
+  }
+
+- id: 4034
+  category: BOOST_COLA
+  payment:
+    internal:
+      price: 1500
+      currency: HARD
+  loot: [ { type: CURRENCY, currency: ULTRA_BOOST, count: 1000 } ]
+  uiData: {
+    discount: 40,
+    image: content/shop/Icons/ultra-cola-lots.svg
+  }

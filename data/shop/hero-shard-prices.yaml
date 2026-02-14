@@ -1,0 +1,269 @@
+- id: 3001
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: COMMON_SHARD_1
+  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 1 } ]
+  uiData:
+
+- id: 3002
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: RARE_SHARD_1
+  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 1 } ]
+  uiData:
+
+- id: 3003
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: EPIC_SHARD_1
+  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 1 } ]
+  uiData:
+
+- id: 3004
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: LEGENDARY_SHARD_1
+  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 1 } ]
+  uiData:
+
+- id: 3005
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: MYTHIC_SHARD_1
+  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 1 } ]
+  uiData:
+
+- id: 3011
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: COMMON_SHARD_2
+  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 6 } ]
+  uiData:
+
+- id: 3012
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: RARE_SHARD_2
+  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 6 } ]
+  uiData:
+
+- id: 3013
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: EPIC_SHARD_2
+  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 6 } ]
+  uiData:
+
+- id: 3014
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: LEGENDARY_SHARD_2
+  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 6 } ]
+  uiData:
+
+- id: 3015
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: MYTHIC_SHARD_2
+  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 6 } ]
+  uiData:
+
+#- id: 3021
+#  category: HERO_SHARD
+#  payment:
+#    internal:
+#      price: 100
+#      currency: COMMON_SHARD_3
+#  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 99 } ]
+#  uiData:
+
+#- id: 3022
+#  category: HERO_SHARD
+#  payment:
+#    internal:
+#      price: 100
+#      currency: RARE_SHARD_3
+#  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 99 } ]
+#  uiData:
+
+#- id: 3023
+#  category: HERO_SHARD
+#  payment:
+#    internal:
+#      price: 100
+#      currency: EPIC_SHARD_3
+#  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 99 } ]
+#  uiData:
+
+#- id: 3024
+#  category: HERO_SHARD
+#  payment:
+#    internal:
+#      price: 100
+#      currency: LEGENDARY_SHARD_3
+#  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 99 } ]
+#  uiData:
+
+#- id: 3025
+#  category: HERO_SHARD
+#  payment:
+#    internal:
+#      price: 100
+#      currency: MYTHIC_SHARD_3
+#  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 99 } ]
+#  uiData:
+
+- id: 3031
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: COMMON_SHARD_4
+  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 2 } ]
+  uiData:
+
+- id: 3032
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: RARE_SHARD_4
+  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 2 } ]
+  uiData:
+
+- id: 3033
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: EPIC_SHARD_4
+  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 2 } ]
+  uiData:
+
+- id: 3034
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: LEGENDARY_SHARD_4
+  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 2 } ]
+  uiData:
+
+- id: 3035
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: MYTHIC_SHARD_4
+  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 2 } ]
+  uiData:
+
+- id: 3041
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: COMMON_SHARD_5
+  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 3 } ]
+  uiData:
+
+- id: 3042
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: RARE_SHARD_5
+  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 3 } ]
+  uiData:
+
+- id: 3043
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: EPIC_SHARD_5
+  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 3 } ]
+  uiData:
+
+- id: 3044
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: LEGENDARY_SHARD_5
+  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 3 } ]
+  uiData:
+
+- id: 3045
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: MYTHIC_SHARD_5
+  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 3 } ]
+  uiData:
+
+- id: 3046
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: COMMON_SHARD_6
+  loot: [ { type: CUSTOM_HERO, rarity: COMMON, setId: 5 } ]
+  uiData:
+
+- id: 3047
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: RARE_SHARD_6
+  loot: [ { type: CUSTOM_HERO, rarity: RARE, setId: 5 } ]
+  uiData:
+
+- id: 3048
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: EPIC_SHARD_6
+  loot: [ { type: CUSTOM_HERO, rarity: EPIC, setId: 5 } ]
+  uiData:
+
+- id: 3049
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: LEGENDARY_SHARD_6
+  loot: [ { type: CUSTOM_HERO, rarity: LEGENDARY, setId: 5 } ]
+  uiData:
+
+- id: 3050
+  category: HERO_SHARD
+  payment:
+    internal:
+      price: 100
+      currency: MYTHIC_SHARD_6
+  loot: [ { type: CUSTOM_HERO, rarity: MYTHIC, setId: 5 } ]
+  uiData:

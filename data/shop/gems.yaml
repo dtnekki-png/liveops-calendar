@@ -1,0 +1,88 @@
+- id: 1001
+  category: GEMS
+  payment:
+    telegram:
+      title: 100 gems
+      description: 100 gems
+      price: 100 #100 XTR
+      priceUsd: 2.00 # for analytics sum_of_payments
+      photoUrl: content/shop/Icons/gems_medium.png
+    xsolla:
+      title: Gem Pack 1
+      price: 1.99 # USD
+  loot: [ { type: CURRENCY, currency: HARD, count: 100 } ]
+  uiData: {
+    image: content/shop/Icons/gems_medium.png
+  }
+
+- id: 1002
+  category: GEMS
+  payment:
+    telegram:
+      title: 275 gems
+      description: 275 gems
+      price: 250 #250 XTR
+      priceUsd: 5.00 # for analytics sum_of_payments
+      photoUrl: content/shop/Icons/gems_medium.png
+    xsolla:
+      title: Gem Pack 2
+      price: 4.99 # USD
+  loot: [ { type: CURRENCY, currency: HARD, count: 275 } ]
+  uiData: {
+    discount: 10,
+    image: shop/Icons/gems_medium.png
+  }
+
+- id: 1003
+  category: GEMS
+  payment:
+    telegram:
+      title: 600 gems
+      description: 600 gems
+      price: 500 # 500 XTR
+      priceUsd: 10.00 # for analytics sum_of_payments
+      photoUrl: content/shop/Icons/gems_medium.png
+    xsolla:
+      title: Gem Pack 3
+      price: 9.99 # USD
+  loot: [ { type: CURRENCY, currency: HARD, count: 600 } ]
+  uiData: {
+    discount: 20,
+    image: content/shop/Icons/gems_medium.png
+  }
+
+- id: 1004
+  category: GEMS
+  payment:
+    telegram:
+      title: 1300 gems
+      description: 1300 gems
+      price: 1000 # 1000 XTR
+      priceUsd: 20.00 # for analytics sum_of_payments
+      photoUrl: content/shop/Icons/gems_medium.png
+    xsolla:
+      title: Gem Pack 4
+      price: 19.99 # USD
+  loot: [ { type: CURRENCY, currency: HARD, count: 1300 } ]
+  uiData: {
+    discount: 30,
+    image: content/shop/Icons/gems_medium.png
+  }
+
+- id: 1005
+  category: GEMS
+  payment:
+    telegram:
+      title: 3500 gems
+      description: 3500 gems
+      price: 2500 # 2500 XTR
+      priceUsd: 50.00 # for analytics sum_of_payments
+      photoUrl: content/shop/Icons/gems_medium.png
+    xsolla:
+      title: Gem Pack 5
+      price: 49.99 # USD
+  loot: [ { type: CURRENCY, currency: HARD, count: 3500 } ]
+  uiData: {
+    discount: 40,
+    image: content/shop/Icons/gems_medium.png
+  }
